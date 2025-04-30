@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Compañeros</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f2f5;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 40px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .card {
+            width: 200px;
+            text-align: center;
+        }
+
+        .card img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+        }
+
+        .card p {
+            margin-top: 10px;
+            font-weight: bold;
+            color: #34495e;
+        }
+
+        .button-container {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .btn-link {
+            background-color: #3498db;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        .btn-link:hover {
+            background-color: #2980b9;
+        }
+
+        @media (max-width: 600px) {
+            .card {
+                width: 100%;
+            }
+
+            .card img {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Compañeros</h1>
+    <div class="grid">
+        <div class="card">
+            <img src="g.jpg" alt="Cristian Galindo">
+            <p>Cristian Galindo</p>
+        </div>
+        <div class="card">
+            <img src="n.jpg" alt="Cesar Sanchez">
+            <p>Laury Lovo</p>
+        </div>
+        <div class="card">
+            <img src="w.jpg" alt="Wilmer Rodriguez">
+            <p>Wilmer Rodriguez</p>
+        </div>
+        <div class="card">
+            <img src="p.jpg" alt="Jazmin Alvarenga">
+            <p>Jazmin Alvarenga</p>
+        </div>
+        <div class="card">
+            <img src="y.jpg" alt="Karen Yamali">
+            <p>Karen Yamali</p>
+        </div>
+        <div class="card">
+            <img src="c.jpg" alt="Yuridia Castillo">
+            <p>Yuridia Castillo</p>
+        </div>
+        <div class="card">
+            <img src="h.jpg" alt="Karla">
+            <p>Karla Alejandra</p>
+        </div>
+        <div class="card">
+            <img src="e.jpg" alt="Elyi">
+            <p>Elyi Maritza</p>
+        </div>
+        <div class="card">
+            <img src="s.jpg" alt="Sesia">
+            <p>Sesia Anai</p>
+        </div>
+    </div>
+
+    <div class="button-container">
+        <a href="index.html" class="btn-link">Salir</a>
+    </div>
+</div>
+
+</body>
+</html>
