@@ -1,0 +1,438 @@
+/* ======== CONFIGURACIÓN GENERAL ======== */
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background-image: url("8.jpg"); /* Tu imagen de fondo */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  margin: 0;
+  padding: 40px 20px;
+  position: relative;
+}
+
+/* Capa semitransparente encima del fondo, pero detrás del contenido */
+body::before {
+  content: "";
+  position: fixed;       /* Cubre toda la pantalla */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(182, 228, 255, 0.73); /* Color morado con opacidad */
+  z-index: -1;           /* Importante: detrás del contenido */
+}
+
+/* ======== NAVBAR ======== */
+.navbar {
+    box-shadow: 2px 2px 5px #000;
+    opacity: 0.9;
+}
+
+.navbar .nav-item .nav-link {
+    color: aliceblue;
+}
+
+/* ======== ENCABEZADO / HEADER ======== */
+header {
+    position: relative;
+    background: url(0.jpg);
+    background-size: cover;
+    min-height: 500px;
+    background-attachment: fixed;
+}
+
+.background {
+    position: relative;
+    background: url(/nj4.jpg);
+    background-size: cover;
+    min-height: 500px;
+    background-attachment: fixed;
+}
+
+.background-overlay {
+    position: absolute;
+    background: rgba(11, 165, 250, 0.6);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* ======== TEXTOS ======== */
+h1, h2, h4 {
+    color: #294f50;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+p {
+    color: #555;
+    font-size: 18px;
+    margin: 10px 0 30px;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ======== IMÁGENES ======== */
+img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 10px;
+    margin: 20px auto;
+    display: block;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.gallery-img {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* ======== GALERÍA ======== */
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fcfbfb;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.galeria img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+/* ======== GRID Y BOTONES ======== */
+.grid-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+    background-color: rgba(225, 187, 187, 0.38);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.grid-row {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.grid-cell {
+    padding: 10px;
+}
+
+.button-grid,
+.button-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+}
+.btn-link,
+.btn-link:hover {
+    text-decoration: none;   /* quita la raya */
+}
+
+/* Resto de tu estilo, sin efectos extra */
+.btn-link {
+    width: 100%;
+    padding: 15px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: none;        /* sin animaciones */
+}
+
+.btn-link:hover {
+    background-color: #007bff;  /* mismo color */
+    color: #ffffff;             /* mismo texto */
+}
+
+
+
+/* Botón especial "Salir" */
+.btn-salir {
+    background-color: #dc3545; /* Color rojo */
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: none; /* Desactiva la transición */
+}
+
+/* No cambia nada al pasar el mouse */
+.btn-salir:hover {
+    background-color: #dc3545;
+    color: white;
+}
+ .btn-salir {
+        background-color: #dc3545; /* rojo típico de "salir" */
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        border-radius: 5px;
+        transition: color 0.3s ease;
+    }
+
+    .btn-salir:hover {
+        background-color: #dc3545; /* No cambia al pasar el mouse */
+        color: white; /* Letras blancas al pasar el mouse */
+    }
+
+
+/* ======== TABLAS E INFORMACIÓN ======== */
+table {
+    border-collapse: collapse;
+    width: 60%;
+    margin: 20px auto;
+}
+
+th, td {
+    border: 1px solid #333;
+    padding: 8px 12px;
+    text-align: center;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Estilo moderno de tabla flex */
+.table {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.table-header,
+.table-row {
+    display: flex;
+}
+
+.table-cell {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.table-header .table-cell {
+    font-weight: bold;
+    background-color: #f0f0f0;
+}
+
+/* Info estilo */
+.info-table {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.info-row {
+    display: flex;
+    gap: 20px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+.info-title {
+    width: 200px;
+    font-weight: bold;
+}
+
+.info-content {
+    flex: 1;
+}
+
+/* ======== LISTAS ======== */
+ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+/* ======== ANCLAJES ======== */
+.anchor {
+    scroll-margin-top: 70px;
+}
+.p {
+    color: aliceblue
+    
+    
+}
+ body {
+      background-color: #f8f9fa;
+      font-family: Arial, sans-serif;
+    }
+
+    .botones-superiores {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .botones-superiores a {
+      margin: 0 10px;
+      display: inline-block;
+    }
+
+    .btn-custom {
+      background-color: #007bff;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      text-decoration: none;
+    }
+
+    .btn-custom:hover {
+      background-color: #0056b3;
+    }
+
+    .galeria {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+      padding: 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .galeria img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(166, 145, 145, 0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .galeria img:hover {
+      transform: scale(1.05);
+    }
+
+    .button-container {
+      text-align: center;
+      margin: 40px 0;
+    }
+
+    .btn-salir {
+      background-color: #dc3545;
+      color: white;
+      padding: 10px 25px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn-salir:hover {
+      background-color: #c82333;
+    }
+/* Info estilo */
+.card {
+      max-width: 900px;
+      margin: 40px auto;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      padding: 30px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    caption {
+      font-size: 1.5em;
+      margin-bottom: 20px;
+      color: #294f50;
+    }
+
+    th, td {
+      border: 1px solid #333;
+      padding: 12px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #4CAF50;
+      color: white;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+
+    .button-container {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .btn-link {
+      text-decoration: none;
+    }
+
+    .btn-salir {
+      background-color: #dc3545;
+      color: white;
+      padding: 10px 25px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .btn-salir:hover {
+      background-color: #dc3545; /* no cambia al pasar el mouse */
+    }
+
+/* fonter pie de pagina */
+ html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .main-content {
+      flex: 1;
+    }
