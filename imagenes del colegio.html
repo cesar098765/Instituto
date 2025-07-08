@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <title>Danza Folklórica</title>
+    <link rel="stylesheet" href="estilos.css">
+    <style>
+        .btn-img {
+            border: none;
+            padding: 0;
+            background: none;
+            cursor: pointer;
+            border-radius: 8px;
+        }
+
+        .btn-img:hover {
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .gallery-img {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        .galeria {
+            padding: 30px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .galeria table {
+            border-collapse: collapse;
+            border: none; /* Sin borde en la tabla */
+        }
+
+        .galeria td {
+            padding: 15px;
+            text-align: center;
+            border: none; /* Sin borde en las celdas */
+        }
+
+        .btn-custom {
+            display: inline-block;
+            margin: 0 10px;
+            padding: 10px 20px;
+            background-color: #444;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .btn-salir {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #444;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .btn-salir:hover,
+        .btn-custom:hover {
+            background-color: #666;
+        }
+    </style>
+</head>
+<body>
+
+<h2 style="text-align:center; margin-top: 30px;">IAM</h2>
+
+<!-- Galería en tabla -->
+<div class="galeria">
+    <table>
+        <tr>
+            <td>
+                <a href="imagen%20colegio1.html"><button class="btn-img"><img src="cl1.jpg" alt="Imagen 1" class="gallery-img"></button></a>
+            </td>
+            <td>
+                <a href="imagen%20colegio2.html"><button class="btn-img"><img src="cl2.jpg" alt="Imagen 2" class="gallery-img"></button></a>
+            </td>
+            <td>
+                <a href="imagen%20colegio3.html"><button class="btn-img"><img src="cl3.jpg" alt="Imagen 3" class="gallery-img"></button></a>
+            </td>
+            <td>
+                <a href="imagen%20colegio4.html"><button class="btn-img"><img src="cl4.jpg" alt="Imagen 4" class="gallery-img"></button></a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href="imagen%20colegio5.html"><button class="btn-img"><img src="cl5.jpg" alt="Imagen 5" class="gallery-img"></button></a>
+            </td>
+            <td>
+                <a href="imagen%20colegio6.html"><button class="btn-img"><img src="cl6.jpg" alt="Imagen 6" class="gallery-img"></button></a>
+            </td>
+            <td>
+                <a href="imagen%20colegio7.html"><button class="btn-img"><img src="cl7.jpg" alt="Imagen 7" class="gallery-img"></button></a>
+            </td>
+            <td>
+                <a href="imagen%20colegio8.html"><button class="btn-img"><img src="cl8.jpg" alt="Imagen 8" class="gallery-img"></button></a>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<center>
+    <div class="button-container">
+        <a href="index.html">
+            <button class="btn-salir">Salir</button>
+        </a>
+    </div>
+</center>
+
+</body>
+</html>
