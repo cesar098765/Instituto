@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <title>Danza Folklórica</title>
+    <link rel="stylesheet" href="estilos.css">
+    <style>
+        .btn-img {
+            border: none;
+            padding: 0;
+            background: none;
+            cursor: pointer;
+            border-radius: 8px;
+        }
+
+        .btn-img:hover {
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .gallery-img {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        .galeria {
+            padding: 30px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .galeria table {
+            border-collapse: collapse;
+            border: none; /* Sin borde en la tabla */
+        }
+
+        .galeria td {
+            padding: 15px;
+            text-align: center;
+            border: none; /* Sin borde en las celdas */
+        }
+
+        .btn-custom {
+            display: inline-block;
+            margin: 0 10px;
+            padding: 10px 20px;
+            background-color: #444;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .btn-salir {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #444;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .btn-salir:hover,
+        .btn-custom:hover {
+            background-color: #666;
+        }
+    </style>
+</head>
+<body>
+
+<h2 style="text-align:center; margin-top: 30px;">Danza Folklórica</h2>
+
+<!-- Botones después del título -->
+<div class="botones-superiores" style="text-align:center;">
+    <a href="danza1.html" class="btn-custom">Danza Cantarranas</a>
+    <a href="danza2.html" class="btn-custom">Danza 15 de septiembre</a>
+    <a href="danza3.html" class="btn-custom">Danza HCH</a>
+</div>
+
+<!-- Galería en tabla -->
+<div class="galeria">
+    <table>
+        <tr>
+            <td>
+                <a href="imagen%20logo%20de%20la%20danza.html"><button class="btn-img"><img src="d.jpg" alt="Imagen 1" class="gallery-img"></button></a>
+            </td>
+            <td>
+                <a href="imagen%20danza%201.html"><button class="btn-img"><img src="danza1.jpg" alt="Imagen 2" class="gallery-img"></button></a>
+            </td>
+            <td>
+                <a href="imagen%20danza%202.html"><button class="btn-img"><img src="danza2.jpg" alt="Imagen 3" class="gallery-img"></button></a>
+            </td>
+            <td>
+                <a href="imagen%20danza%203.html"><button class="btn-img"><img src="danza3.jpg" alt="Imagen 4" class="gallery-img"></button></a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href="imagen%20danza%204.html"><button class="btn-img"><img src="danza4.jpg" alt="Imagen 5" class="gallery-img"></button></a>
+            </td>
+            <td>
+                <a href="imagen%20danza%205.html"><button class="btn-img"><img src="danza5.jpg" alt="Imagen 6" class="gallery-img"></button></a>
+            </td>
+            <td>
+                <a href="imagen%20danza%206.html"><button class="btn-img"><img src="danza6.jpg" alt="Imagen 7" class="gallery-img"></button></a>
+            </td>
+            <td>
+                <a href="imagen%20danza%207.html"><button class="btn-img"><img src="danza7.jpg" alt="Imagen 8" class="gallery-img"></button></a>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<center>
+    <div class="button-container">
+        <a href="quienes%20somos.html">
+            <button class="btn-salir">Salir</button>
+        </a>
+    </div>
+</center>
+
+</body>
+</html>
